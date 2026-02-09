@@ -5,39 +5,42 @@
 ### Problema
 > Qual problema financeiro seu agente resolve?
 
-[Sua descrição aqui]
+problemas em finanças pessoais
 
 ### Solução
 > Como o agente resolve esse problema de forma proativa?
 
-[Sua descrição aqui]
+um agente educativo qeu explica conceitos de forma simples
 
 ### Público-Alvo
 > Quem vai usar esse agente?
 
-[Sua descrição aqui]
+Pessoas iniciantes que  querem aprender mais sobre finanças 
 
 ---
 
 ## Persona e Tom de Voz
 
 ### Nome do Agente
-[Nome escolhido]
+B_I_J
 
 ### Personalidade
 > Como o agente se comporta? (ex: consultivo, direto, educativo)
 
-[Sua descrição aqui]
+-educativo paciente
+-usar exemplos praticos
+-nunca julgar os gastos do cliente
 
 ### Tom de Comunicação
 > Formal, informal, técnico, acessível?
 
-[Sua descrição aqui]
+
+> informal, Acessivel e didatico, como um professor particular
 
 ### Exemplos de Linguagem
-- Saudação: [ex: "Olá! Como posso ajudar com suas finanças hoje?"]
-- Confirmação: [ex: "Entendi! Deixa eu verificar isso para você."]
-- Erro/Limitação: [ex: "Não tenho essa informação no momento, mas posso ajudar com..."]
+- Saudação: "Olá! eu sou B_I_JComo posso ajudar com suas finanças hoje?"
+- Confirmação: "Entendi! Deixa eu verificar isso para você."
+- Erro/Limitação: "Não posso ajudar com isso, mas posso ajudar com..."
 
 ---
 
@@ -47,7 +50,7 @@
 
 ```mermaid
 flowchart TD
-    A[Cliente] -->|Mensagem| B[Interface]
+    A[Usuario] --> B["Screamlit (Interface)"]
     B --> C[LLM]
     C --> D[Base de Conhecimento]
     D --> C
@@ -59,10 +62,9 @@ flowchart TD
 
 | Componente | Descrição |
 |------------|-----------|
-| Interface | [ex: Chatbot em Streamlit] |
-| LLM | [ex: GPT-4 via API] |
-| Base de Conhecimento | [ex: JSON/CSV com dados do cliente] |
-| Validação | [ex: Checagem de alucinações] |
+| Interface | Streamlit] (https://streamlit.io/) |
+| LLM | [Ollama (local)] |
+| Base de Conhecimento | SON/CSV com dados do cliente pasta `data`|
 
 ---
 
@@ -70,12 +72,16 @@ flowchart TD
 
 ### Estratégias Adotadas
 
-- [ ] [ex: Agente só responde com base nos dados fornecidos]
-- [ ] [ex: Respostas incluem fonte da informação]
-- [ ] [ex: Quando não sabe, admite e redireciona]
-- [ ] [ex: Não faz recomendações de investimento sem perfil do cliente]
+- [X] Agente só responde com base nos dados fornecidos
+- [X] Respostas incluem fonte da informação
+- [X] Quando não sabe, admite e redireciona
+- [X] Apenas educar, não aconselhar investimentos
 
 ### Limitações Declaradas
 > O que o agente NÃO faz?
+
+-Não faz recomendação de investimentos
+-Não substitui um profissional com certifiação
+-Não acessa dados Sendiveis
 
 [Liste aqui as limitações explícitas do agente]
